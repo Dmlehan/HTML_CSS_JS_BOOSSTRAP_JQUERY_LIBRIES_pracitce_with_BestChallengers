@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07 js string methods</title>
+</head>
+<body>
+<script>
+  var name="Hello world";
+  //--Return the char characters at a specified index in a string
+  var val= name.charAt(8);
+  console.log(val);//r
+
+  //-- return the unicode of the character at a specified index in a string
+
+  val=name.charCodeAt(8)
+  console.log(val);//114
+
+  //-- combine two or more strings
+
+  var str1="Hello";
+  var str2="Lanka";
+  var val=str1.concat(str2);
+  console.log(val);//HelloLanka
+
+  val=str1.concat(',',str2,",Japan");
+  console.log(val);// Hello,Lanka,Japan
+
+  // check whether a string ends with specified characters
+  var myStr1="Welcome to ijse.lk";
+  var myStr2="Welcome to ijse.com";
+  myStr1.endsWith(".lk");//true
+  myStr2.endsWith(".lk");//false
+
+  // -- Checks whether a string starts with specified characters --
+  myStr1 = "Welcome to ijse.lk";
+  myStr2 = "Hi! Welcome to ijse.com";
+  myStr1.startsWith("We"); // true
+  myStr2.startsWith("We"); // false
+  myStr2.startsWith("H"); //true
+
+  // -- Converts Unicode values into characters --
+  String.fromCharCode(72); // H
+  String.fromCharCode(75); // K
+
+  // -- Checks whether a string contains the specified substring --
+  var new_str = "Hello! welcome to Sri Lanka. This is the most beautiful country in the world!";
+  new_str.includes("most"); // true
+  new_str.includes("Sri Lanka"); // true
+  new_str.includes("sri Lanka"); // false
+
+  // find string length
+  console.log(new_str.length); // 77
+
+  // -- Returns the index of the first occurrence of a specified value in a string. --
+  new_str = "Hello, world";
+  new_str.indexOf("world"); // 7
+  new_str.indexOf("ld"); // 10
+
+  // -- Returns the index of the last occurrence of a specified valuein a string. --
+  new_str = "Hello, world world";
+  new_str.indexOf("world") // 7
+  new_str.lastIndexOf("world") // 13
+
+  // -- Compares two strings in the current locale --
+  var str1 = "apple";
+  var str2 = "mango";
+  str1.localeCompare(str2) // -1
+  var str3 = "mango";
+  str2.localeCompare(str3) // 0
+  var str4 = "Mango"
+  str4.localeCompare(str3) // 1
+  str3.localeCompare(str4)  // -1
+  var str6 = "Mango"
+  var str7 = "maNgo"
+  str6.localeCompare(str7) // 1
+
+  // -- Searches a string for a specified value or regular expressionpattern and returns an array of the matches. --
+  let str = "The quick brown fox jumps over the lazy dog.";
+  str.match(/o/g); // ['o', 'o', 'o', 'o']
+  str = "The quick broWn fox Jumps over the lazy Dog."
+  str.match(/([A-Z])\w+/g); // ['The', 'Wn', 'Jumps', 'Dog']
+
+  // -- Searches a string for a specified value or regular expressionpattern and replaces it with another string. --
+  var str100 = "A B C D E F";
+  str100.replace(" ", ","); // 'A,B C D E F'
+  str100.replaceAll(" ", ","); // 'A,B,C,D,E,F'
+
+  // -- Searches a string for a specified value or regular expressionpattern and returns the index of the first match. --
+  var x = "hello hi welcome hi";
+  x.search('hi'); // 6
+
+  // -- Extracts a part of a string and returns a new string. --
+  var y = "Hello, World";
+  y.slice(7,12) // 'World'
+  y.slice(2, 7) // 'llo, '
+  y.slice(2) // 'llo, World'
+
+  // -- Splits a string into an array of substrings based on aspecified delimiter. --
+  x = "A, B, C, D, E, F"
+  x.split(", "); // ['A', 'B', 'C', 'D', 'E', 'F']
+
+  // -- Checks whether a string starts with specified characters
+  var x = "hello, world";
+  x.startsWith("hello") // true
+  x.startsWith("hi") // false
+
+  // -- Checks whether a string ends with specified characters
+  x.endsWith('ld'); //true
+  x.endsWith('com'); //false
+
+  // -- Extracts a specified number of characters from a string,starting at a specified index. --
+  var y = "Hello, world!";
+  y.substr(4); // 'o, world!'
+  y.substr(4, 5); // 'o, wo'
+
+  y.substring(4, 12) // 'o, world'
+
+  y.toLocaleLowerCase(); //'hello, world!'
+  y.toLocaleUpperCase(); // 'HELLO, WORLD!'
+
+  y.toLowerCase() //'hello, world!'
+  y.toUpperCase() //'HELLO, WORLD!'
+
+  // trim
+  var y = " Pathum Sandeepa ";
+  y.trim() // 'Pathum Sandeepa'
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
