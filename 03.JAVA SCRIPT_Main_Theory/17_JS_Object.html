@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+</head>
+<body>
+<script>
+    let person={
+        firstP_name: "Ravidu",
+        last_name:"Lehan",
+        mobile:"0767615691",
+        email:"dmlehanamanda@gmail.ljkld",
+        address:"panadura"
+    }
+
+    console.log(person.firstP_name);
+    console.log(person.last_name);
+    console.log(person.email);
+    console.log(person.address);
+    console.log(person.mobile);
+
+    person.firstP_name="Lehan";//update data
+    function Man(first_name, last_name,age){
+        this.first_name=first_name;
+        this.last_name=last_name;
+        this.age=age;
+    }
+    let man=new Man("Lehan","Sumana pala",25);
+    console.log(man);
+    //Class Syntax
+    class Teacher{
+     constructor(first_name,last_name,age) {
+         this._first_name=first_name;
+         this._last_name=last_name;
+         this._age=age;
+     }
+     get first_name(){
+         return this._first_name;
+     }
+     set first_name(first_name){
+         this._first_name=first_name + 'IJSE';
+     }
+     get last_name(){
+         return this._last_name;
+     }
+     set last_name(last_name){
+         this._last_name=last_name;
+     }
+     get age(){
+         return age;
+     }
+     set age(age){
+         return age;
+     }
+     set age (age){
+         this._age=age;
+     }
+
+    }
+    let  teacher=new Teacher("Lehan","Amanda",45);
+    console.log(teacher);
+
+   class Student{
+       constructor(name,school) {
+           this._name=name;
+           this._school=school;
+       }
+       get name(){
+           return this._name;
+       }
+       set name(name){
+           this._name=name;
+       }
+   }
+   let student=new Student("Lehan","Amanda");
+   let student_name=student.name;
+   student.name="Amara";
+
+</script>
+</body>
+</html>
