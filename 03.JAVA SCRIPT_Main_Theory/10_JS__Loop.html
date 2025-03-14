@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loopse</title>
+</head>
+<body>
+
+<script>
+    for (var i = 0; i < 100; i++) {
+        console.log(i+1);
+    }
+
+    var sum=0;
+    for(var i=1;i<100;i++){
+        if(i%2==0){
+            sum+=i;
+        }
+    }
+    console.log("Sum1 : "+ sum);
+
+    //while (condition){
+    // body
+    // }
+     var num=1;
+     var sum1=0;
+     while(num<=100){
+         if(num%2===0){
+             sum1+=num;
+         }
+         num++;
+     }
+     console.log("Sum1 : ",sum1 );
+     // do{
+     //
+     // }while(conndition)
+
+    var num3=1;
+    var sum3=0;
+    do{
+        if (num3%2==0){
+            sum3+=num3;
+        }
+        num3++;
+    }while(num3<=100)
+    console.log("Sum : ",  sum3)
+</script>
+</body>
+</html>
