@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+<body>
+<button id="myId1">MYID CLICK1</button>
+<br>
+<button id="myId2">MYID CLICK3</button>
+<br>
+<button id="myId3">MYID CLICK4</button>
+<br>
+<button id="myId5">MYID CLICK5</button>
+<br>
+<button id="myId6">MYID CLICK6</button>
+<br>
+<button id="myId7">MYID CLICK7</button>
+<br>
+<button id="myId8">MYID CLICK8</button>
+<br>
+<button id="myId9">MYID CLICK9</button>
+<br>
+<button id="myId10">MYID CLICK10</button>
+<br>
+<button id="myId11">MYID CLICK11</button>
+<br>
+<button id="myId12">MYID CLICK12</button>
+<br>
+
+<button id="myId13">MYID CLICK13</button>
+<br>
+
+<button id="myId14">MYID CLICK14</button>
+<br>
+<button id="myId15">MYID CLICK15</button>
+<br>
+
+<button id="myId16">MYID CLICK16</button>
+<br>
+<button id="myId17">MYID CLICK17</button>
+<br>
+<button id="myId18">MYID CLICK18</button>
+<br>
+<button id="myId19">MYID CLICK19</button>
+<button id="myId20">MYID CLICK20</button>
+<br>
+<button id="myId21">MYID CLICK21</button>
+<br>
+<button id="myId22">MYID CLICK22</button>
+<br>
+<button id="myId23">MYID CLICK23</button><br>
+<button id="myId24">MYID CLICK24</button><br>
+<button id="myId25">MYID CLICK25</button><br>
+<button id="myId26">MYID CLICK26</button><br>
+<script>
+
+    // non block variable declaration
+    //var
+    //block scope variable declaration
+    //let,const-can't re assign value
+
+
+
+    // Named Function
+    function myFunction(pam1,pam2,pam3){}
+    function myFunction(){
+        console.log("My Function");
+    }
+
+    function myFunction(i,x){
+        let total=i+x;
+        console.log("Sum : ", total);
+
+        }
+        myFunction (4,5);
+    myFunction();
+    // Function Expression
+    const myFunction2=function(){
+        console.log("My Function2");
+    }
+    myFunction2();
+
+    const myFunction3=function (){
+        console.log("my function3");
+    }
+    myFunction3();
+
+    const myFunction4=function (){
+        console.log("myfunction4");
+    }
+    const myFunction5=function (){
+        console.log("myFunction5");
+    }
+    myFunction5();
+    const myFunction6=function (number1,number2){
+        console.log("SUM : ", number1+number2);
+    }
+    myFunction6(10,20);
+
+    // Functionn Constructor
+
+    const myFunction7=new Function("arg1","arg2","arg3","return arg1+arg2+arg3");
+    let result=myFunction7(10,40,50);
+    console.log("Result : ",result);
+
+
+    const myFunction8=new Function ("arg1","arg2","arg3","return arg1+arg2+arg3");
+     result =myFunction8(100,100,100);
+    console.log("Result : ", result);
+
+    var myFunction9=new Function("arg1","arg2","arg3","arg4","return arg1+arg2+arg3+arg4");
+    result = myFunction9(200,500,500,500);
+    console.log("Result : ", result);
+    myFunction9=new Function("arg1","arg2","arg3","arg4","arg5","arg6","return arg1+arg2+arg3+arg4+arg5+arg6");
+    result = myFunction9(200,500,500,500,800,400);
+
+    console.log("Result : ", result);
+
+     myFunction9=new Function("arg1","arg2","return arg1+arg2");
+     result=myFunction9(500,500);
+    console.log("Result : ", result);
+ myFunction9 =new Function ("a1","a2","return a1+a2");
+  result=myFunction9(500,10);
+  console.log(result);
+
+  const myArrowFunction= ()=>{
+      console.log("My Arrow function");
+    }
+    myArrowFunction();
+
+  const myArrowFunction1= ()=>{
+      console.log("My arrow function1");
+  }
+  myArrowFunction1();
+
+  const myArrowFunction2= ()=>{
+      console.log("My arrow function2");
+  }
+    myArrowFunction2();
+  // Anonymous Function
+  //
+    document.getElementById("myId1").addEventListener('click',()=>{
+
+        console.log("CLICKED MY ID BUTTON");
+    })
+    //
+    // document.getElementsById("myId1").addEventListener('click',()=>{
+    //     console.log("CLICKED MY ID BUTTON1");
+    // })
+
+    document.getElementById("myId3").addEventListener('click',()=>{
+        console.log.bind("Clicked My Id button2");
+    })
+    // document.getElementById("myId3").addEventListener('click',()=>{
+    //     console.log("Clicked My Id button3");
+    // })
+     document.getElementById("myId2").addEventListener('click',()=>{
+         console.log("Clikced My Id button2");
+     })
+    document.getElementById("myId5").addEventListener('click',()=>{
+        console.log("clicked My id button 5");
+    })
+    document.getElementById("myId6").addEventListener('click',()=>{
+        console.log("clicked My id button 6");
+    })
+    document.getElementById("myId7").addEventListener('click',()=>{
+        console.log("clicked myid button 7");
+    })
+
+    // java scrip object practise
+     let person={
+        firstP_name:"ravindu",
+         last_name:"Lehan",
+         mobile:"0767615631",
+         email:"dmlehanamanda@gmail.com",
+         address:"panadura"
+     }
+     console.log(person.firstP_name);
+    console.log(person.last_name);
+    console.log(person.email);
+    console.log(person.address);
+    console.log(person.mobile);
+
+    person.firstP_name="Lehan";
+    function Man(first_name,last_name,age){
+        this.first_name=first_name;
+        this.last_name=last_name;
+        this.age=15;
+    }
+    var man1=new Man("lehamn","a",45);
+    console.log(man1);
+
+</script>
+</body>
+</html>
