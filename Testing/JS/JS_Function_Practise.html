@@ -190,6 +190,88 @@
     }
     var man1=new Man("lehamn","a",45);
     console.log(man1);
+   class Teacher{
+       constructor(first_name,last_name,age) {
+           this._first_name = first_name;
+           this._last_name=last_name;
+           this._age=age;
+
+       }
+       //
+       // get first_firstname(){
+       //     return this._first_name;
+       // }
+       //
+       // set first_name(first_name){
+       //     this._first_name=first_name
+       // }
+
+       get first_name(){
+           return this.first_name;
+       }
+       set first_name(first_name){
+           this._first_name=first_name+'IJSE';
+       }
+       get  last_name(){
+           return this._last_name;
+       }
+       set last_name(last_name){
+           this._last_name=last_name;
+       }
+       get age(){
+           return  this._age;
+       }
+       set  age(age){
+           this._age=age;
+       }
+   }
+
+let teacher=new Teacher("Lehan","Amanda","45");
+   console.log(teacher);
+   class Student{
+       constructor(name,school) {
+           this._name=name;
+           this._school=school;
+       }
+       get name(){
+           return this._name;
+       }
+       set name(name){
+           this._name=name;
+           student.name="Amara";
+       }
+   }
+
+   let student=new Student("Lehan", "Amanda");
+   let student_name=student.name;
+   student.name="amara";
+    console.log(student);
+     let car={
+         price:450000,
+         model:"toyota",
+         email:"dmlehanamanda@gmail.com",
+         address:"panadura"
+     }
+
+     car.price=780000;
+     function Car(price,model,email,address){
+
+         this.price=price;
+         this.model=model;
+         this.email=email;
+         this.address=address;
+     }
+     let car=new Car(80000,"Toyota","dmlehanamanda@gmail.com","panadura");
+     console.log(car);
+
+
+
+   //
+   //
+   //
+
+
+
 
 </script>
 </body>

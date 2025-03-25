@@ -30,6 +30,8 @@
     let man=new Man("Lehan","Sumana pala",25);
     console.log(man);
     //Class Syntax
+
+
     class Teacher{
      constructor(first_name,last_name,age) {
          this._first_name=first_name;
@@ -39,26 +41,34 @@
      get first_name(){
          return this._first_name;
      }
+
      set first_name(first_name){
          this._first_name=first_name + 'IJSE';
      }
+
      get last_name(){
          return this._last_name;
      }
+
      set last_name(last_name){
          this._last_name=last_name;
      }
+
      get age(){
          return age;
      }
+
      set age(age){
          return age;
      }
+
      set age (age){
          this._age=age;
      }
-
     }
+
+
+
     let  teacher=new Teacher("Lehan","Amanda",45);
     console.log(teacher);
 
@@ -67,9 +77,11 @@
            this._name=name;
            this._school=school;
        }
+
        get name(){
            return this._name;
        }
+
        set name(name){
            this._name=name;
        }
@@ -79,6 +91,8 @@
    let student=new Student("Lehan","Amanda");
    let student_name=student.name;
    student.name="Amara";
+
+
 
 </script>
 </body>
