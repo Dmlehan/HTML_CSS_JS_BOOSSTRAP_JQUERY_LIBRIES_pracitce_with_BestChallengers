@@ -30,7 +30,7 @@
     </div>
 
 </form>
-<table> border="1" style="margin-top: 10opx">
+<table border="1" style="margin-top: 10px">
     <thead>
     <th> First Name</th>
     <th>Last Name</th>
@@ -59,11 +59,15 @@ document.getElementById("save").addEventListener('click',function(){
     let lname=document.getElementById("lname").value;
     let email=document.getElementById("email").value;
     let inner_Html=document.getElementById("tbody").innerHTML;
-    let new_Html=inner_Html+"<tr> <td>"+fname+"</td> <td>"+lname+"</td><td>"+email+"</td></tr>";
-    document.getElementById("tbody").innerHTML=new_Html;
-    // document.getElementById("tbody").innerHTML+=
+    // method 1
 
-})
+    // let new_Html=inner_Html+"<tr> <td>"+fname+"</td> <td>"+lname+"</td><td>"+email+"</td></tr>";
+    // document.getElementById("tbody").innerHTML=new_Html;
+
+    // method 2
+     document.getElementById("tbody").innerHTML+="<tr><td>"+fname+"</td><td>"+lname+"</td><td>"+email+"</td></tr>";
+
+});
 </script>
 </body>
 </html>
