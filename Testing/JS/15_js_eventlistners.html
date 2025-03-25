@@ -99,13 +99,11 @@
     // });
     // 4 click event Listner
 
-    document.getElementById ("save").addEventListener('dblclick', function(){
-        let fname=document.getElementById('fname').value;
-        let lName=document.getElementById("lname").value;
-        let eMail=document.getElementById("email").value;
-        document.getElementById("tbody").innerHTML+="<tr><td>"+fname+"</td><td>"+lName+"</td><td>"+eMail+"</td></tr>"
-
+    document.getElementById('fname').addEventListener('keydown', function (event) {
+        console.log("keydown!! - ", event.key);
+        console.log("keydown!! - ", event.target.value);
     });
+
 
 
 </script>
