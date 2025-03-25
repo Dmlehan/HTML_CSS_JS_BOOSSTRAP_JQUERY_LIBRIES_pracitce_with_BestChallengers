@@ -97,6 +97,15 @@
     //    document.getElementById("tbody").innerHTML+="<tr><td>"+fName+"</td><td>"+lName+"</td><td>"+email+"</td></tr>"
     //
     // });
+    // 4 click event Listner
+
+    document.getElementById ("save").addEventListener('dblclick', function(){
+        let fname=document.getElementById('fname').value;
+        let lName=document.getElementById("lname").value;
+        let eMail=document.getElementById("email").value;
+        document.getElementById("tbody").innerHTML+="<tr><td>"+fname+"</td><td>"+lName+"</td><td>"+eMail+"</td></tr>"
+
+    });
 
 
 </script>
