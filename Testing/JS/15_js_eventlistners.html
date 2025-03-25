@@ -58,6 +58,11 @@ document.getElementById("save").addEventListener('click',function(){
     let fname=document.getElementById("fname").value;
     let lname=document.getElementById("lname").value;
     let email=document.getElementById("email").value;
+    let inner_Html=document.getElementById("tbody").innerHTML;
+    let new_Html=inner_Html+"<tr> <td>"+fname+"</td> <td>"+lname+"</td><td>"+email+"</td></tr>";
+    document.getElementById("tbody").innerHTML=new_Html;
+    // document.getElementById("tbody").innerHTML+=
+
 })
 </script>
 </body>
