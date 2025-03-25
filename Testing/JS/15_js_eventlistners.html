@@ -88,21 +88,57 @@
    //
    //  });
 
-    // //3 click event listner
-    // document.getElementById("save").addEventListener("click", function(){
-    //    var fName=document.getElementById("fname").value;
-    //    var lName=document.getElementById("lname").value;
-    //    var email=document.getElementById("email").value;
-    //
-    //    document.getElementById("tbody").innerHTML+="<tr><td>"+fName+"</td><td>"+lName+"</td><td>"+email+"</td></tr>"
-    //
-    // });
+    //3 click event listner
+    document.getElementById("save").addEventListener("click", function(){
+       var fName=document.getElementById("fname").value;
+       var lName=document.getElementById("lname").value;
+       var email=document.getElementById("email").value;
+
+       document.getElementById("tbody").innerHTML+="<tr><td>"+fName+"</td><td>"+lName+"</td><td>"+email+"</td></tr>"
+
+    });
     // 4 click event Listner
 
     document.getElementById('fname').addEventListener('keydown', function (event) {
         console.log("keydown!! - ", event.key);
         console.log("keydown!! - ", event.target.value);
+
     });
+    //
+    // document.getElementById('fname').addEventListener('keydown', function (event) {
+    //     // console.log("keydown!! - ", event.key);
+    //     // console.log("keydown!! - ", event.target.value);
+    // });
+    //
+    // document.getElementById('fname').addEventListener('keyup', function (event) {
+    //     // console.log("keyup!!");
+    //     console.log("keyup!! - ", event.target.value);
+    // });
+    //
+    // document.getElementById('fname').addEventListener('keypress', function () {
+    //     // console.log("keypress!!");
+    // });
+    //
+    // document.getElementById("save").addEventListener('mousedown', function () {
+    //     console.log("mousedown!!");
+    // });
+    //
+    // document.getElementById("save").addEventListener('mouseup', function () {
+    //     console.log("mouseup!!");
+    // });
+    //
+    //
+    // document.getElementById("box").addEventListener('mouseover', function () {
+    //     console.log("Mouse-over!!");
+    // });
+    //
+    // document.getElementById("box").addEventListener('mouseenter', function () {
+    //     console.log("Mouse-enter!!");
+    // });
+    //
+    // document.getElementById("box").addEventListener('mouseout', function () {
+    //     console.log("Mouse-out!!");
+    // });
 
 
 

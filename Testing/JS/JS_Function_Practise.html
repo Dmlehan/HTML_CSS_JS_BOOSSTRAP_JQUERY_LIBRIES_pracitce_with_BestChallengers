@@ -264,7 +264,10 @@ let teacher=new Teacher("Lehan","Amanda","45");
      let car=new Car(80000,"Toyota","dmlehanamanda@gmail.com","panadura");
      console.log(car);
 
-
+    document.getElementById('fname').addEventListener('keyup', function (event) {
+        // console.log("keyup!!");
+        console.log("keyup!! - ", event.target.value);
+    });
 
    //
    //
